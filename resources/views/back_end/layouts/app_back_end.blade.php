@@ -15,6 +15,7 @@
        
     <script defer src="{{asset('backend/assets/plugins/fontawesome/js/all.min.js')}}"></script>
     <link id="theme-style" rel="stylesheet" href="{{asset('backend/assets/css/portal.css')}}">
+	{{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
 
 </head> 
 
@@ -25,12 +26,7 @@
 	</header>
 	<div class="app-wrapper">
 		<div class="app-content pt-3 p-md-3 p-lg-4">
-			<div class="container-xl">
-				<div class="row g-4">
-					
-					
-				</div>
-			</div>
+			@yield('content')
 		</div>
 		@include('back_end.commons.footer')
 	</div>
@@ -38,6 +34,8 @@
 
 	<script src="{{asset('backend/assets/plugins/popper.min.js')}}"></script>
 	<script src="{{asset('backend/assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('backend/assets/plugins/chart.js/chart.min.js')}}"></script>
+	<script src="{{asset('backend/assets/js/index-charts.js')}}"></script>
 
 	<script src="{{asset('backend/assets/js/app.js')}}"></script>
 </body>

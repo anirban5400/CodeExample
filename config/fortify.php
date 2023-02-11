@@ -61,7 +61,8 @@ return [
     |
     */
 
-    'home' => RouteServiceProvider::HOME,
+    // 'home' => RouteServiceProvider::HOME,
+    'home' => env('LOGIN_HOME', RouteServiceProvider::HOME),
 
     /*
     |--------------------------------------------------------------------------
