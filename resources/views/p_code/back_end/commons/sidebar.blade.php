@@ -8,7 +8,8 @@
         </div>
         <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
             <ul class="app-menu list-unstyled accordion" id="menu-accordion">
-                @include('p_code.back_end.commons.sidebar_list.overview',['current_route_name'=>$currentRouteName])
+                @include('p_code.back_end.commons.sidebar_list.home',['current_route_name'=>$currentRouteName])
+                @include('p_code.back_end.commons.sidebar_list.blogs',['current_route_name'=>$currentRouteName])
                 @include('p_code.back_end.commons.sidebar_list.document',['current_route_name'=>$currentRouteName])
                 @include('p_code.back_end.commons.sidebar_list.order',['current_route_name'=>$currentRouteName])
                 @include('p_code.back_end.commons.sidebar_list.pages',['current_route_name'=>$currentRouteName])

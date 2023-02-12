@@ -41,6 +41,7 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
+            "app/Helpers/formatHelper.php",
             "app/Helpers/livewireHelper.php"
         ]
     },

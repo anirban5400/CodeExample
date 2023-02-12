@@ -19,10 +19,10 @@
 	{{-- new add --}}
 	<link rel="stylesheet" href="{{asset('backend/plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('backend/plugins/fontawesome-v5.15.4/css/all.css')}}">
-    {{-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    {{-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css" integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css">
-     --}}
+    
 
     <!-- Select2 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/plugins/select2/css/select2.min.css') }}">
@@ -37,14 +37,18 @@
 
     
     <link href="{{asset('backend/plugins/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet">
-	<link href="{{asset('backend/plugins/toastr/toastr.css')}}" rel="stylesheet"/>
+	  <link href="{{asset('backend/plugins/toastr/toastr.css')}}" rel="stylesheet"/>
     <link href="{{asset('backend/plugins/toastr/toastr.min.css')}}" rel="stylesheet">
     <script src="{{asset('backend/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('backend/js/get_client_info.js')}}"></script>
     <link href="{{asset('backend/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('backend/css/colors.css')}}" rel="stylesheet">
+    <link href="{{asset('backend/css/breadcrumb.css')}}" rel="stylesheet">
     @livewireStyles
     @stack('styles')
+    <style>
+      @media (min-width: 1800px){.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container { max-width: 1600px;}}
+    </style>
 
 </head> 
 
@@ -54,7 +58,7 @@
 		@include('p_code.back_end.commons.sidebar')
 	</header>
 	<div class="app-wrapper">
-		<div class="app-content pt-3 p-md-3 p-lg-4">
+		<div class="app-content pt-2">
 			@yield('content')
 		</div>
 		@include('p_code.back_end.commons.footer')
