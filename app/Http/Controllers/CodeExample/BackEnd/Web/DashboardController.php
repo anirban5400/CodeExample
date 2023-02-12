@@ -16,6 +16,6 @@ class DashboardController extends Controller
     {
         $page_name='overview';
         $params=$request->all();
-        return view('back_end.p_code.pages.overview',compact('page_name'));
+        return view('p_code.back_end.pages.overview',compact('page_name'));
     }
 }

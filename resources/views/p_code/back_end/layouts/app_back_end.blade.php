@@ -50,14 +50,14 @@
 
 <body class="app">   	
     <header class="app-header fixed-top">
-		@include('back_end.commons.topbar')
-		@include('back_end.commons.sidebar')
+		@include('p_code.back_end.commons.topbar')
+		@include('p_code.back_end.commons.sidebar')
 	</header>
 	<div class="app-wrapper">
 		<div class="app-content pt-3 p-md-3 p-lg-4">
 			@yield('content')
 		</div>
-		@include('back_end.commons.footer')
+		@include('p_code.back_end.commons.footer')
 	</div>
 	
 
